@@ -1,0 +1,82 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <!-- Fixed navbar -->
+	<div class="navbar navbar-inverse navbar-fixed-top headroom" >
+		<div class="container">
+			<div class="navbar-header">
+				<!-- Button for smallest screens -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+				<a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="Progressus HTML5 template"></a>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav pull-right">
+					<li class="active"><a href="index.aspx">Home</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Manage <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="cus.aspx">Customer</a></li>
+							<li><a href="sidebar-left.html">Left Sidebar</a></li>
+                            <li><a href="sidebar-left.html">Left Sidebar</a></li>
+                            <li><a href="sidebar-left.html">Left Sidebar</a></li>
+                            <li><a href="sidebar-left.html">Left Sidebar</a></li>
+						</ul>
+					</li>
+					<li><a href="contact.aspx">Contact</a></li>
+					<li><a class="btn" href="signin.html">SIGN IN / SIGN UP</a></li>
+				</ul>
+			</div><!--/.nav-collapse -->
+		</div>
+	</div> 
+	<!-- /.navbar -->
+
+	<!-- Header -->
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+
+        <footer id="footer" class="top-space">
+
+		<div class="footer2">
+			<div class="container">
+				<div class="row">
+					
+					<div class="col-md-6 widget">
+						<div class="widget-body">
+							<p class="simplenav">
+								<a href="#">Home</a> | 
+								<a href="about.html">About</a> |
+								<a href="sidebar-right.html">Sidebar</a> |
+								<a href="contact.html">Contact</a> |
+								<b><a href="signup.html">Sign up</a></b>
+							</p>
+						</div>
+					</div>
+
+					<div class="col-md-6 widget">
+						<div class="widget-body">
+							<p class="text-right">
+								Copyright &copy; 2014, Your name. Designed by <a href="http://gettemplate.com/" rel="designer">gettemplate</a> 
+							</p>
+						</div>
+					</div>
+
+				</div> <!-- /row of widgets -->
+			</div>
+		</div>
+
+	</footer>	
+    </div>
+    </form>
+</body>
+</html>
